@@ -4,4 +4,4 @@ print("La temperatura en Fahrenheit es: ", far)
 
 
 #ejercicio extra
-print(f"La temperatura en Celsius es: {round(far,2)}ºF ({round(cel,2)}ºC)")
+print("La temperatura en Celsius es: {:.2f}ºF ({:.2f}ºC)".format(far,cel))
