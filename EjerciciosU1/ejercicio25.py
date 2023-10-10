@@ -1,9 +1,7 @@
 fecha = input("Introduce la fecha en formato dd/mm/aaaa: ")
 fecha1 = fecha.split("/")
+dia= int(fecha1[0])
+mes = int(fecha1[1])
+anio= fecha1[2]
 
-if len(fecha1[0]) == 1:
-    fecha1[0] = "0" + fecha1[0]
-if len(fecha1[1]) == 1:
-    fecha1[1] = "0" + fecha1[1]
-
-print(f"Día {fecha1[0]} del mes {fecha1[1]} del año {fecha1[2]}")
+print("Día {:02d} del mes {:02d} del año {}" .format(dia, mes, anio))
