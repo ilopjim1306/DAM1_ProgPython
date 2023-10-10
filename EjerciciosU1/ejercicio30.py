@@ -24,7 +24,7 @@ if(incremento <= 0):
         incremento = int(input("Error introduce un incremento mayor a 0: "))
 if(total <= 0):
     while(total <= 0):
-        total = int(input("Error introduce un total mayor a 0: "))
+        total = int(input("Error introduce un final mayor a 0: "))
 while (inicio < total):
     inicio = inicio + incremento
     print(inicio)
