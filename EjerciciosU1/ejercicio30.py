@@ -24,14 +24,14 @@
 #           Si (cont == total) entonces
 #               serie = serie + inicio
 #           Sino 
-#               serie = seroe + inicio + "-"
+#               serie = serie + inicio + "-"
 #Fin
 
 inicio = int(input("Dame un número de inicio: "))
 incremento = int(input("Dame un número de incremento: "))
 total = int(input("Dame un número final: "))
 serie = "SERIE => " + str(inicio) +  "-"
-cont = inicio
+cont = 1
 
 while(incremento <= 0 or total <= 0):
     incremento = int(input("Error introduce un incremento mayor a 0: "))
