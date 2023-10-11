@@ -6,7 +6,7 @@
 #   Escribe "Dame un número final: "
 #   Lee total
 #   serie = "SERIE => " + inicio
-#   cont = 1
+#   cont = inicio
 #   Si (incremento < 0) entonces
 #       Mientras (incremento < 0)
 #           Escribe "Error introduce un incremento mayor a 0: "
@@ -30,22 +30,21 @@
 inicio = int(input("Dame un número de inicio: "))
 incremento = int(input("Dame un número de incremento: "))
 total = int(input("Dame un número final: "))
-serie = str("SERIE => ") + str(inicio) +  str("-")
-cont = 1
+serie = "SERIE => " + str(inicio) +  "-"
+cont = inicio
 
 while(incremento <= 0 or total <= 0):
     incremento = int(input("Error introduce un incremento mayor a 0: "))
     total = int(input("Error introduce un final mayor a 0: "))
-
 while (cont < total):
     inicio = inicio + incremento
     cont = cont + 1
     if (cont < (total - 1)):
-        serie = str(serie) + str(inicio) + str("..")
+        serie = serie + str(inicio) + ".."
     else:
         if (cont == total):
-            serie = str(serie) + str(inicio)
+            serie = serie + str(inicio)
         else:
-            serie = str(serie) + str(inicio) + str("-")
+            serie = serie + str(inicio) + "-"
 
 print(serie)
