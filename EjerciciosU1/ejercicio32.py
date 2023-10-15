@@ -47,14 +47,5 @@ print(serie)
 
 
 
-# numFin2 = numFin
-# while (numIni <= numFin):
-#     if (numIni != numFin):
-#         serie = serie + str(numIni) + "-"
-#     numIni = numIni + 1
-# serie = serie + str(numFin2)
-
-
-
 
 
