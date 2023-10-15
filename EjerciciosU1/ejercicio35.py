@@ -55,6 +55,17 @@ while (opcion < 1 or opcion > 4):
     if (opcion < 1 or opcion > 4):
         print("Error - No es una opción correcta (1-4)")
 
+if (opcion == 1):
+    print(str(n1) + " + " + str(n2) + " = " + str((n1+n2)))
+if (opcion == 2):
+    print(str(n1) + " - " + str(n2) + " = " + str((n1-n2)))
+if (opcion == 3):
+    print(str(n1) + " * " + str(n2) + " = " + str((n1*n2)))
+if (opcion == 4):
+    if (n2 == 0):
+        print("La división por cero no es posible")
+    else:
+        print(str(n1) + " / " + str(n2) + " = " + str((n1/n2)))
 
 
 

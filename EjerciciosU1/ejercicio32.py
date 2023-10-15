@@ -15,36 +15,44 @@
 # 	Escribe "Introduce otro: "
 # 	Lee y
 # 	Si (x >= y) entonces
-# 		numIni = x - 1
+# 		numIni = x
 # 		numFin = y
 # 	Sino
-# 		numIni = y - 1
+# 		numIni = y
 # 		numFin = x
-# 	Para i en (numIni...numFin) hacer
-# 		Escribe i + 
-# 		Si (numIni != numFin) entonces
-# 			Escribe "-"
+#   Mientras (numIni <= numFin) hacer
+#		Escribe numIni
+#		Si (numIni != numFin) entonces
+#			Escribe "-"
+#       numIni = numIni + 1
 # Fin
+
 x = int(input("Introduce un número: "))
 y = int(input("Introduce otro: "))
 
-if (x >= y):
-    numIni = x - 1
+if (x <= y):
+    numIni = x
     numFin = y
 else:
-    numIni = y - 1
+    numIni = y
     numFin = x
-for i in range(numIni, numFin):
-    print(i + 1)
-    if (numIni!= numFin):
-        print("-")
+serie = ""
+while (numIni <= numFin):
+    serie = serie + str(numIni)
+    if (numIni != numFin):
+        serie = serie + "-"
+    numIni = numIni + 1
+print(serie)
 
 
 
 
-
-
-
+# numFin2 = numFin
+# while (numIni <= numFin):
+#     if (numIni != numFin):
+#         serie = serie + str(numIni) + "-"
+#     numIni = numIni + 1
+# serie = serie + str(numFin2)
 
 
 
