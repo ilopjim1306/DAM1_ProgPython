@@ -24,7 +24,3 @@ while  num < 1 or num > 10:
 
 print("Correcto!")
 
-
-
-
-
