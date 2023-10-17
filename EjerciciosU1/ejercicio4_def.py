@@ -3,6 +3,6 @@
 
 def temperatura():
     far = float(input("Ingresa la temperatura en Farenheit: "))
-    return (far - 32) * 5/9
+    return round((far - 32) * 5/9,2)
 
 print("La temperatura en Celsius es: ", temperatura())
