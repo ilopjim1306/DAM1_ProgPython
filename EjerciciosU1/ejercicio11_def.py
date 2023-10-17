@@ -4,7 +4,7 @@
 def suma(n):
     return f"Suma = {n} * ({n} + 1)/2 = {n * (n + 1)/2}"
 
-n= float(input("Introduce un número positivo: "))
+n= int(input("Introduce un número positivo: "))
 
 print(suma(n))
 
